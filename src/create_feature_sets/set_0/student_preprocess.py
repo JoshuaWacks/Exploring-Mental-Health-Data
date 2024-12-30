@@ -55,7 +55,6 @@ class StudentPreprocessSet0:
 
         self.df.loc[self.df['Sleep Duration'] == '6-7 hours','Sleep Duration'] = '5-6 hours'
 
-
         invalid_values = ['40-45 hours','55-66 hours','than 5 hours','45']
         self.df = self.df[~self.df['Sleep Duration'].isin(invalid_values)]
 

@@ -38,7 +38,6 @@ class ProfPreprocessSet0:
 
         return numeric_cols,categorical_cols
     
-
     def __fix_invalid_profression(self):
         self.df.loc[self.df['Profession'] == 'Medical Doctor','Profession'] = 'Doctor'
 
